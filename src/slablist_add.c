@@ -750,8 +750,6 @@ ripple_common(slab_t *s, subslab_t *p, slab_t *n, subslab_t *nn)
 	add_ctx_t t;
 	bzero(&t, sizeof (add_ctx_t));
 	int status;
-	int broke = 0;
-	int skip_loop = 1;
 	slablist_t *sl = s->s_list;
 	int sorting = SLIST_IS_SORTING_TEMP(sl->sl_flags);
 	/*
@@ -769,14 +767,12 @@ ripple_common(slab_t *s, subslab_t *p, slab_t *n, subslab_t *nn)
 		}
 		t = subslab_gen_add(status, n, nn, n->s_below);
 		while (t.ac_subslab_new != NULL) {
-			skip_loop = 0;
 			nn = t.ac_subslab_new;
 			/*
 			 * If there is no subslab, there is no point in
 			 * continueing.
 			 */
 			if (nn->ss_below == NULL) {
-				broke = 1;
 				break;
 			}
 			status = sl->sl_bnd_elem(nn->ss_min,
