@@ -32,7 +32,6 @@
  * The internal architecture of libslablist is described in slablist_impl.h
  */
 
-#include <unistd.h>
 #include <stdlib.h>
 #include <pthread.h>
 #include <strings.h>

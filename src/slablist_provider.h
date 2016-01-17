@@ -5,8 +5,6 @@
 #ifndef	_SLABLIST_PROVIDER_H
 #define	_SLABLIST_PROVIDER_H
 
-#include <unistd.h>
-
 #ifdef	__cplusplus
 extern "C" {
 #endif

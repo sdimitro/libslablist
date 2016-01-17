@@ -19,10 +19,10 @@
  */
 /*
  * Copyright 2012 Nicholas Zivkovic. All rights reserved.
+ * Copyright 2016 Serapheim Dimitropoulos. All rights reserved.
  * Use is subject to license terms.
  */
 
-#include <unistd.h>
 #include <stdlib.h>
 #include <pthread.h>
 #include <strings.h>

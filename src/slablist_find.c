@@ -19,12 +19,12 @@
  */
 /*
  * Copyright 2012 Nicholas Zivkovic. All rights reserved.
+ * Copyright 2016 Serapheim Dimitropoulos. All rights reserved.
  * Use is subject to license terms.
  */
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <fcntl.h>
 #include <strings.h>
 #include "slablist_impl.h"
 #include "slablist_provider.h"
