@@ -1,4 +1,4 @@
-# This file should be used with the BSD version of make.
+# This file can be used with the BSD version of make.
 #
 # Please email serapheimd@gmail.com for any issues,
 # comments or suggestions.
